@@ -18,7 +18,7 @@ body {
   padding: 0;
   height: 100%;
   color: var(--text);
-  background: var(--bg);
+  background: radial-gradient(1200px 800px at 10% 10%, #10172a 0%, #0b0f19 50%) fixed;
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial,
     'Noto Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.6;
@@ -222,6 +222,16 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+}
+
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(900px 600px at 80% 20%, rgba(138, 180, 255, 0.15), rgba(20, 26, 46, 0)) no-repeat,
+              radial-gradient(800px 500px at 10% 80%, rgba(120, 255, 214, 0.08), rgba(20, 26, 46, 0)) no-repeat;
 }
 
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">My Portfolio</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#qualification">My Qualification</a></li>
+            <li><a href="#experience">My Work Experience</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container">
+          <h1>Hello, I'm <span class="accent">Your Name</span></h1>
+          <p class="subtitle">A short tagline about who you are and what you do.</p>
+          <a class="btn" href="#about">Learn more</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="grid two-cols">
+            <div>
+              <p>
+                Write a concise introduction about yourself here. Highlight your passion,
+                strengths, and what motivates you. Keep it friendly and focused.
+              </p>
+              <p>
+                Outside of work, mention hobbies or interests to add a human touch.
+              </p>
+            </div>
+            <div class="card">
+              <ul class="key-points">
+                <li>Location: Your City</li>
+                <li>Role: Your Role/Title</li>
+                <li>Interests: Topic A, Topic B</li>
+                <li>Open to: Opportunities/Collaboration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="qualification" class="section alt">
+        <div class="container">
+          <h2>My Qualification</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="time">2020 – 2022</div>
+              <div class="content">
+                <h3>Master of Science, Major</h3>
+                <p>University Name – Brief focus or achievements.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="time">2016 – 2020</div>
+              <div class="content">
+                <h3>Bachelor of Science, Major</h3>
+                <p>University Name – Relevant coursework or projects.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="time">Certificates</div>
+              <div class="content">
+                <h3>Certifications</h3>
+                <p>List notable certificates, bootcamps, or online courses.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>My Work Experience</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Job Title – Company</h3>
+              <p class="muted">Jan 2023 – Present • City</p>
+              <ul>
+                <li>Key impact or responsibility #1 with measurable outcome.</li>
+                <li>Key impact or responsibility #2 with tools/tech used.</li>
+                <li>Key impact or responsibility #3 that shows leadership or ownership.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Previous Job – Company</h3>
+              <p class="muted">Jun 2020 – Dec 2022 • City</p>
+              <ul>
+                <li>Accomplishment #1.</li>
+                <li>Accomplishment #2.</li>
+                <li>Accomplishment #3.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> Your Name
+          · <a href="mailto:you@example.com">you@example.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

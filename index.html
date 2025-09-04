@@ -1,130 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home">My Portfolio</a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-        <nav class="site-nav" aria-label="Primary">
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#qualification">My Qualification</a></li>
-            <li><a href="#experience">My Work Experience</a></li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravin CHA wala - Your Digital Logistics Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"><h2>Pravin CHA wala</h2></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Platform <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="platform/planning-costing.html">Planning and Costing</a>
+                            <a href="platform/communication.html">Communication and Collaboration</a>
+                            <a href="platform/workflow.html">Digitized Workflow</a>
+                            <a href="platform/tracking.html">Tracking and Tracing</a>
+                            <a href="platform/analytics.html">Reporting and Analytics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services/freight-forwarding.html">Freight Forwarding</a>
+                            <a href="services/transportation.html">Transportation</a>
+                            <a href="services/custom-clearance.html">Custom Clearance</a>
+                            <a href="services/value-added.html">Value Added Services</a>
+                            <a href="services/cargo-tracker.html">Cargo Tracker</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Solutions <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="solutions/international-importers.html">For International Importers/Exporters</a>
+                            <a href="solutions/indian-importers.html">For Indian Importers/Exporters</a>
+                            <a href="solutions/forwarders.html">For Forwarders/Service Providers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="resources/events.html">Events & Media</a>
+                            <a href="resources/faq.html">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Company <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About Us</a>
+                            <a href="careers.html">Careers</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav-buttons">
+                    <span class="contact-sales">Contact Sales: 1800-102-0667</span>
+                    <button class="btn-secondary">FREE Sign Up</button>
+                    <button class="btn-primary">Log In</button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
-      </div>
     </header>
 
-    <main id="home">
-      <section class="hero">
-        <div class="container">
-          <h1>Hello, I'm <span class="accent">Rahul More</span></h1>
-          <p class="subtitle">A short tagline about who you are and what you do.</p>
-          <a class="btn" href="#about">Learn more</a>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container">
-          <h2>About Me</h2>
-          <div class="grid two-cols">
-            <div>
-              <p>
-                Write a concise introduction about yourself here. Highlight your passion,
-                strengths, and what motivates you. Keep it friendly and focused.
-              </p>
-              <p>
-                Outside of work, mention hobbies or interests to add a human touch.
-              </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>We're Pravin CHA wala</h1>
+                <h2>Your Digital Logistics Partner</h2>
+                <p>Cut out the hassles of frequent follow-ups, hidden shipping charges, and cumbersome documentation from your ocean freight. Switch to our digital logistics platform</p>
+                <button class="btn-primary btn-large">Sign Up</button>
             </div>
-            <div class="card">
-              <ul class="key-points">
-                <li>Location: Mumbai</li>
-                <li>Role: Head IT</li>
-                <li>Interests: AI</li>
-                <li>Open to: Collaboration</li>
-              </ul>
+            <div class="hero-form">
+                <h3>Find your best shipping option in 4 seconds</h3>
+                <p>Compare dozens of shipping deals and choose what's best for you</p>
+                <form class="quote-form">
+                    <div class="form-group">
+                        <label>Source</label>
+                        <input type="text" placeholder="Eg: Nhava Sheva (INNSA)" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <input type="text" placeholder="Eg: Felixstowe (GBFXT)" class="form-input">
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Get Quote</button>
+                </form>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="qualification" class="section alt">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
         <div class="container">
-          <h2>My Qualification</h2>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="time">2020 – 2022</div>
-              <div class="content">
-                <h3>Master of Science, Major</h3>
-                <p>University Name – Brief focus or achievements.</p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="time">2016 – 2020</div>
-              <div class="content">
-                <h3>Bachelor of Science, Major</h3>
-                <p>University Name – Relevant coursework or projects.</p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="time">Certificates</div>
-              <div class="content">
-                <h3>Certifications</h3>
-                <p>List notable certificates, bootcamps, or online courses.</p>
-              </div>
-            </article>
-          </div>
+            <h2>Service that exceeds expectations</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="quote">"The instant online quotations help us to efficiently budget our logistics operations"</div>
+                    <div class="author">
+                        <strong>Gobind Singh</strong>
+                        <span>Managing Director, BTL Herbs & Spices Pvt. Ltd, India</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The real-time tracking helps me keep my clients accurately informed about the cargo arrival date, and allows me to take necessary actions in time, whenever required"</div>
+                    <div class="author">
+                        <strong>Siddharth Rachh</strong>
+                        <span>Owner, Kismis Co., India</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"I can now import goods from India without worrying about quality, compliance, and hasslesome paperwork — thanks to Pravin CHA wala"</div>
+                    <div class="author">
+                        <strong>Ayman Baki</strong>
+                        <span>Owner, STY Global, Turkey</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="experience" class="section">
+    <!-- Customers Section -->
+    <section class="customers">
         <div class="container">
-          <h2>My Work Experience</h2>
-          <div class="cards">
-            <article class="card">
-              <h3>Job Title – Company</h3>
-              <p class="muted">Jan 2023 – Present • City</p>
-              <ul>
-                <li>Key impact or responsibility #1 with measurable outcome.</li>
-                <li>Key impact or responsibility #2 with tools/tech used.</li>
-                <li>Key impact or responsibility #3 that shows leadership or ownership.</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Previous Job – Company</h3>
-              <p class="muted">Jun 2020 – Dec 2022 • City</p>
-              <ul>
-                <li>Accomplishment #1.</li>
-                <li>Accomplishment #2.</li>
-                <li>Accomplishment #3.</li>
-              </ul>
-            </article>
-          </div>
+            <h2>Our customers</h2>
+            <div class="customer-logos">
+                <div class="customer-logo">Aditya Birla Group</div>
+                <div class="customer-logo">ANSAPACK</div>
+                <div class="customer-logo">Bajaj Electricals Ltd</div>
+                <div class="customer-logo">HNG Glass</div>
+                <div class="customer-logo">Parksons Packaging</div>
+                <div class="customer-logo">Simba Toys</div>
+                <div class="customer-logo">Suminter India Organics</div>
+                <div class="customer-logo">Thyssenkrupp</div>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          © <span id="year"></span> Rahul More
-          · <a href="mailto:you@example.com">you@example.com</a>
-        </p>
-      </div>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why choose Pravin CHA wala</h2>
+            <p>Take complete control of your supply chain processes with the help of our digital platform and dedicated team</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Simplified Costing and Planning</h3>
+                    <ul>
+                        <li>Get quotes and schedules in 4 seconds</li>
+                        <li>Save 75% time while booking freight by dealing with a single logistics partner</li>
+                        <li>Get dozens of shipping options without making countless enquiries and follow ups</li>
+                    </ul>
+                    <a href="platform/planning-costing.html" class="feature-link">See how we do it</a>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Convenient Online Documentation</h3>
+                    <ul>
+                        <li>Upto 30% reduced documentation time</li>
+                        <li>Avoid missing cutoffs due to documentation errors</li>
+                        <li>Finalize BL & SI without shuttling between emails & paperwork</li>
+                    </ul>
+                    <a href="platform/workflow.html" class="feature-link">See how we do it</a>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Real-Time Tracking and Updates</h3>
+                    <ul>
+                        <li>Auto-alerts for you & your clients for all milestones</li>
+                        <li>Receive real-time transhipment alerts</li>
+                        <li>Minimize losses by responding to unavoidable delays proactively</li>
+                    </ul>
+                    <a href="platform/tracking.html" class="feature-link">See how we do it</a>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Intelligent Analytics and Invoicing</h3>
+                    <ul>
+                        <li>24x7 access to all your invoices</li>
+                        <li>Manage all reports and invoices on a single platform</li>
+                        <li>Auto-generate daily status, monthly spending, and historical pricing reports</li>
+                    </ul>
+                    <a href="platform/analytics.html" class="feature-link">See how we do it</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Experience Pravin CHA wala for FREE</h2>
+            <p>Experience our service first-hand, free of charge to discover how we help you ship smarter. Sign up now to get:</p>
+            <ul>
+                <li>Instant rates including port and terminal charges</li>
+                <li>Detailed vessel schedules</li>
+                <li>Historical pricing reports, and</li>
+                <li>Expert assistance from our customer service team!</li>
+            </ul>
+            <div class="cta-buttons">
+                <button class="btn-primary btn-large">Sign Up</button>
+                <button class="btn-secondary btn-large">Get in Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="platform/planning-costing.html">Planning and Costing</a></li>
+                        <li><a href="platform/communication.html">Communication and Collaboration</a></li>
+                        <li><a href="platform/workflow.html">Digitized Workflow</a></li>
+                        <li><a href="platform/tracking.html">Tracking and Tracing</a></li>
+                        <li><a href="platform/analytics.html">Reporting and Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services/freight-forwarding.html">Freight Forwarding</a></li>
+                        <li><a href="services/transportation.html">Transportation</a></li>
+                        <li><a href="services/custom-clearance.html">Custom Clearance</a></li>
+                        <li><a href="services/value-added.html">Value Added Services</a></li>
+                        <li><a href="services/cargo-tracker.html">Cargo Tracker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="solutions/international-importers.html">For International Importers/Exporters</a></li>
+                        <li><a href="solutions/indian-importers.html">For Indian Importers/Exporters</a></li>
+                        <li><a href="solutions/forwarders.html">For Forwarders/Service Providers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>1800-102-0667 (India)</p>
+                    <p>info@pravinchawala.com</p>
+                    <p>2nd Floor, Udyog Bhavan, Walchand Hirachand Marg, Ballard Estate, Fort, Mumbai - 400001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pravin CHA wala, a BTJ Logistics Pvt. Ltd. domain</p>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
-  </html>
-
-
+</body>
+</html>

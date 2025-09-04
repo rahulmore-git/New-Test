@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Task Tracker</h1>
+      </header>
+
+      <section class="card">
+        <h2>Add Task</h2>
+        <form action="{{ url_for('add_task') }}" method="post" class="form-row">
+          <input type="text" name="title" placeholder="Task title" required>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Tasks</h2>
+        {% if tasks %}
+        <ul class="task-list">
+          {% for t in tasks %}
+            <li class="task {{ 'done' if t['completed'] else '' }}">
+              <form action="{{ url_for('toggle_task', task_id=t['id']) }}" method="post">
+                <button class="toggle" title="Toggle status">{{ '✓' if t['completed'] else '○' }}</button>
+              </form>
+              <div class="content">
+                <div class="title">{{ t['title'] }}</div>
+                <div class="meta">Created {{ t['created_at'] }}</div>
+              </div>
+              <div class="actions">
+                <a class="edit" href="{{ url_for('edit_page', task_id=t['id']) }}">Edit</a>
+                <form action="{{ url_for('delete_task', task_id=t['id']) }}" method="post" onsubmit="return confirm('Delete this task?')">
+                  <button class="delete" type="submit">Delete</button>
+                </form>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+          <p class="muted">No tasks yet. Add your first task above.</p>
+        {% endif %}
+      </section>
+
+      <footer>
+        <p>Simple Flask Task Tracker</p>
+      </footer>
+    </div>
+  </body>
+  </html>
+
+
